@@ -1,235 +1,117 @@
 <!DOCTYPE html>
-<div lang="en">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>udemy</title>
+    <title>Tripadvisor Clone</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    </head>
+</head>
 <body>
-    <div class="navbar">
-        <div>
-            <h1> udemy </h1>
-    
+    <nav class="navbar">
+        <h1>Tripadvisor</h1>
+        <div class="nav-links">
+            <a href="#">Discover</a>
+            <a href="#">Trips</a>
+            <a href="#">Review</a>
+            <a href="#">Flights</a>
         </div>
+        <div class="nav-right">
+            <i class="fa-solid fa-globe"></i> <span>INR</span>
+            <button id="signup-btn">Sign Up</button>
+        </div>
+    </nav>
 
-        <a> explore </a>
-         
-    
-        <div class="search">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <input type="search" id="name" name="name" required placeholder="search for anything">
+    <header class="main-container">
+        <div class="search-box">
+            <h1>Where to?</h1>
+            <div class="categories">
+                <div class="category-item"><i class="fa-solid fa-house"></i> <span>Search All</span></div>
+                <div class="category-item"><i class="fa-solid fa-hotel"></i> <span>Hotels</span></div>
+                <div class="category-item"><i class="fa-solid fa-box"></i> <span>Things To Do</span></div>
+                <div class="category-item"><i class="fa-solid fa-utensils"></i> <span>Restaurants</span></div>
+                <div class="category-item"><i class="fa-solid fa-house-chimney"></i> <span>Holiday Homes</span></div>
+            </div>
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="search" placeholder="Place to go, things to do, hotels">
+            </div>
+        </div>
+    </header>
+
+    <section class="hero-image">
+        <img src="./img/home-image.png" alt="Travel destination">
+    </section>
+
+    <div class="featured-container">
+
+        <section class="featured">
+        <h2>2024's Award-Winning Shores</h2>
+        <h3>Travellers' Choice Awards Best of the Best Beaches</h3>
+    </section>
+
+    <section class="recommended">
+        <div class="destination">
+            <img src="./img/c1.jpg" alt="Beach">
+            <h1 class="destination-tagline"> Asia Beaches </h1>
+        </div>
+        <div class="destination"><img src="./img/c2.jpg" alt="Mountain">
+        <h1 class="destination-tagline">Caribbean Beaches</h1></div>
+        <div class="destination"><img src="./img/c3.jpg" alt="City">
+            <h1 class="destination-tagline">Europe Beaches</h1>
+        </div>
+        <div class="destination"><img src="./img/c4.jpg" alt="Resort">
+            <h1 class="destination-tagline">South pacific Beaches </h1>
         </div>
         
-        <div>
-            <a class="space">plans&pricing</a>
-            <a class="space">udemy business</a>
-            <a class="space">tech on udemy</a>
-        </div>
+    </section>
+</div>
     
-        <div>
-            <button id="btn">Login</button>
-            <button id="ntb">signup</button>
-        </div>
-    </div>
-
-    <div class="categories">
-        <p>development</p>
-        <p>business</p>
-        <p>IT & software</p>
-        <p>personal development</p>
-        <p>design</p>
-        <p>marketing</p>
-    </div>
-
-    <div class="sale-image">
-        <img src="./images/sale-image.jpg" alt=""/>
-        <div class="sale-image_offer">
-            <h2>udemy flash sale 24 hours to save </h2>
-            <p>get the top courses for just 499. just one day to save.</p>
-        </div>
-
-    </div>
-
+<div class="city">
+    <section class="sub-featured">
+        <h2>You might like these </h2>
+        <h3>More things to do in chennai (madras)</h3>
+    </section>
     
-     <div class="recommended">
-          <h1 class="recommended_container">recommended for you</h1>
-          <p>pick the best fit</p>
-          
-
-          <div class="recommended_container">
-
-
-          <div class="course-card">
-          <img src="./images/clone1.jpg" alt=""/>
-          <h3>2023 python data visualization masterclass</h3>
-          <p>col stable</p>
-          <p>4.9 ⭐⭐⭐⭐</p>
-          <p>449 <del>1999</del></p>
-         </div>
-
-
-         <div class="course-card">
-            <img src="./images/clone2.jpg" alt=""/>
-            <h3>web development bootcamp 2023 |Advance</h3>
-            <p>col stable</p>
-            <p>3.9 ⭐⭐⭐</p>
-            <p>449<del>1999</del></p>
-         </div>
-
-
-         <div class="course-card">
-            <img src="./images/clone3.jpg" alt=""/>
-            <h3>master UI/UX designing eith figma </h3>
-            <p>col stable</p>
-            <p>4.9 ⭐⭐⭐⭐⭐</p>
-            <p>449<del>1999</del></p>
-         </div>
-
-         <div class="course-card">
-            <img src="./images/clone4.jpg" alt=""/>
-            <h3>basic to Advance java core training</h3>
-            <p>col stalbe</p>
-            <p>2.9 ⭐⭐</p>
-            <p>449<del>1999</del></p>
-         </div>
+    <div class="popular">
         
-        </div>
-    </div>
-     
-
-   <div class="topics">
-    <h1 class="topics_title">Topics recommended for you</h1>
-    <div class="topics_container">
-        <p>website</p>
-        <p>javascript</p>
-        <p>CSS</p>
-        <p>Mongo DB</p>
-        <p>Azure</p>
-        <p>Docker</p>
-        <p>Github</p>
-        <p>React Js</p>
-        <p>AWS</p>
+        <div class="destination"><img src="./img/c5.jpg" alt="Adventure">
+        <h3>Total chennai city tour in private car with guide & lunch by wonder tours 
+        </h3><p>🟢🟢🟢 02</p></div>
+        <div class="destination"><img src="./img/c6.jpg" alt="Nature">
+        <h3>pondicherry day trip from chennai by wonder tours </h3><p>🟢🟢🟢🟢 42</p></div>
+        <div class="destination"><img src="./img/c7.jpg" alt="Cruise"><h3>chennai museum walk by a heritage storyteller</h3><p>🟢🟢🟢 34</p></div>
+        <div class="destination"><img src="./img/c8.jpg" alt="Island"><h3>Mahabalipuram & kanchipuram in a day from chennai by private car with guide </h3><p>🟢🟢🟢🟢 20</p></div>
     </div>
 </div>
+<div class="sub-city">
+    <section class="subject">
+        <h2>Ways to tour chennai (madras)</h2>
+        <h3>book these experiences for a close-up look at chennai(madras).</h3>
+    </section>
 
-<div class="popular">
-    <h1 class="popular__title">Most popular</h1>
-    <p class="popular__subtitle">Pick the best fit</p>
-
-    
-    <div class="popular_subtitle">
-    
-    
-        <div class="course-card">
-            <img src="./images/clone1.jpg" alt=""/>
-            <h3>2023 Python Data Visualization Masterclass</h3>
-            <p>col stable</p>
-            <p>4.9 ⭐⭐⭐⭐</p>
-            <p>449 <del>1999</del></p>
-           </div>
-  
-  
-           <div class="course-card">
-              <img src="./images/clone2.jpg" alt=""/>
-              <h3>Web Development Bootcamp 2023 |Advance</h3>
-              <p>col stable</p>
-              <p>3.9 ⭐⭐⭐</p>
-              <p>449<del>1999</del></p>
-           </div>
-  
-  
-           <div class="course-card">
-              <img src="./images/clone3.jpg" alt=""/>
-              <h3>Master UI/UX Designing with Figma </h3>
-              <p>col stable</p>
-              <p>4.9 ⭐⭐⭐⭐⭐</p>
-              <p>449<del>1999</del></p>
-           </div>
-  
-           <div class="course-card">
-              <img src="./images/clone4.jpg" alt=""/>
-              <h3>Basic to Advance Java Core Training</h3>
-              <p>col stalbe</p>
-              <p>2.9 ⭐⭐</p>
-              <p>449<del>1999</del></p>
-           </div>
-        </div>
-</div>
-       
-
-    <div class="abcd">
-
-     <div class="course-card">
-        <img src="./images/c5 (1).jpg" alt=""/>
-        <h3>Master AI and ML</h3>
-        <P>col stable</P>
-        <p>4.9 ⭐⭐⭐⭐⭐ </p>
-        <p>499<del>1999</del></p>
-     </div>
-
-     <div class="course-card">
-        <img src="./images/c6.jpg" alt=""/>
-        <h3>Basic to Advance c++ core Traning </h3>
-        <p>col stable</p>
-        <p>2.9 ⭐⭐</p>
-        <p>499<del>1999</del></p>
-     </div>
-
-     <div class="course-card">
-        <img src="./images/c7.jpg" alt=""/>
-        <h3>Master DevOps Traning</h3>
-        <p>col stable</p>
-        <p>4.9 ⭐⭐⭐⭐⭐</p>
-        <p>499<del>1999</del></p>
-     </div>
-
-     <div class="course-card">
-        <img src="./images/c8.jpg" alt=""/>
-        <h3>Automation Testing Traning</h3>
-        <p>col stable</p>
-        <p>2.9 ⭐⭐</p>
-        <p>499 <del>1999</del></p>
-     </div>
-
-
+    <div class="store">
+        <div class="destination"><img src="./img/p1.jpg" alt=""><h3>Highlight of the chennai (guided half day city tour)</h3><p>🟢🟢🟢🟢🟢 32</p><h4> from $6,372 per adult</h4></div>
+        <div class="destination"><img src="./img/p2.jpg" alt=""><h3>Chennai half day guided tour in a private car </h3><p>🟢🟢🟢🟢🟢 120</p><h4> from $3,653 per adult</h4></div>
+        <div class="destination"><img src="./img/p3.jpg" alt=""><h3>Evening in marina</h3><p>col stable</p><p>🟢🟢🟢🟢 23</p><h4>from $8,500 per adult</h4></div>
+        <div class="destination"><img src="./img/p4.jpg" alt=""><h3>Full-Day private tour to temples in chennai </h3><p>🟢🟢🟢🟢 65</p><h4>from %9,346 per adult</h4></div>
     </div>
-   
-<div class="footer">
-
-   <div class="footer__one">
-      <div class="footer__one__s1">
-          <p>udemy business</p>
-          <p>Teach on Udemey</p>
-          <p>get the app</p>
-          <p>about us</p>
-          <p>Contact us</p>
-      </div>
-    
-
-    <div class="footer__one__s2">
-      <p>Careers</p>
-      <p>Blog</p>
-      <p>Help and support</p>
-      <p>Affiliate</p>
-      <p>investors</p>
-    </div>
-</div> 
-
-
-        <div class="footer__two">
-            <h1>Udemy</h1>
-        <p>&copy; udemy,Inc</p>
         
-    </div>
-
-  
-
-
-
+</div>
+<div class="notebook">
+    <section class="sub-store">
+        <h2>Vibrant Asian cities </h2>
+        <h3>From rich culturals history to psychedelic streets </h3>
+    </section>
+    <div class="note">
+    <div class="destination"><img src="./img/v1.jpg" alt=""></div>
+    <div class="destination"><img src="./img/v2.jpg" alt=""></div>
+    <div class="destination"><img src="./img/v3.jpg" alt=""></div>
+    <div class="destination"><img src="./img/v4.jpg" alt=""></div>
+</div>
+</div>
+    
+    
+    
 </body>
 </html>
